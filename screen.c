@@ -14,6 +14,8 @@
 void	my_welcome_msg(char *name)
 {
   my_putstr(BOLDWHITE);
+  pikachu_first_part();
+  pikachu_second_part();
   my_putstr("\n\n-------------------------------------------------------\n");
   my_putstr(RED);
   my_putstr("*******************************************************");
@@ -29,34 +31,6 @@ void	my_welcome_msg(char *name)
   my_putstr(name);
   my_putstr(", a new adventure will start...\n\n\n\n");
   my_putstr(RESET);
-}
-
-void	my_mode_msg()
-{
-  my_putstr(RED);
-  my_putstr("*******************************************************");
-  my_putstr("\n*******************");
-  my_putstr(BOLDWHITE);
-  my_putstr("Choose your mode!");
-  my_putstr(BOLDRED);
-  my_putstr("*******************\n");
-  my_putstr("*******************************************************\033[0m");
-  my_putstr(BOLDYELLOW);
-  my_putstr("\n\n      Out of Battle (OoB) | In Battle (IB)\n");
-  my_putstr(RESET);
-}
-
-void	my_oob_msg()
-{
-  my_putstr(RED);
-  my_putstr("\n\n*******************************************************");
-  my_putstr("\n***********************");
-  my_putstr(BOLDWHITE);
-  my_putstr("MODE  OoB");
-  my_putstr(BOLDRED);
-  my_putstr("***********************\n***********");
-  my_putstr("********************************************\033[0m\n\n");
-  my_optionOoB_msg();
 }
 
 void	my_ib_msg()
@@ -88,3 +62,57 @@ void	my_optionOoB_msg()
   my_putstr("\033[1;33m>'quit'\033[0;33m: Leave this game\n");
   my_putstr(RESET);
 }
+
+void	pikachu_first_part()
+{
+my_putstr("\n                             ¶¶\n");
+my_putstr("                            ¶¶¶¶\n");
+my_putstr("                           ¶¶¶¶¶¶\n");
+my_putstr("                          ¶¶¥¥¥¶¶¶\n");
+my_putstr("                         ¶¶¥¥¥¥¥¶¶¶                    \n");
+my_putstr("                         ¶¶¥¥¥¥¥¥¶¶¶                   \n");
+my_putstr("                         ¶¶¥¥¥¥¥¥ƒƒ¶¶                  \n");
+my_putstr("                         ¶¶¥¥¥¥ƒƒƒƒƒ¶¶                 \n");
+my_putstr("                         ¶¶¶ƒƒƒƒƒƒƒƒ§¶¶                \n");
+my_putstr("                          ¶¶¶ƒƒƒƒƒƒ§§¶¶                \n");
+my_putstr("                            ¶¶ƒƒƒƒƒ§§¶¶                \n");
+my_putstr("                             ¶¶ƒƒ§§§§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n");
+my_putstr("                              ¶¶§§§§§§§ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                               ¶¶§§§ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                             ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                           ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¶¶¶¶¶\n");
+my_putstr("                          ¶¶ƒƒ¶¶¶¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¶¶__¶¶\n");
+my_putstr("                         ¶¶ƒƒ¶¶__¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¶¶¶¶¶¶\n");
+my_putstr("                        ¶¶ƒƒƒ¶¶¶¶¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¶¶¶¶¶\n");
+my_putstr("                        ¶¶ƒƒƒƒ¶¶¶¶ƒƒƒƒƒ¥¥¥ƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                        ¶¶###ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥¥ƒƒƒƒƒƒ\n");
+my_putstr("                        ¶¶####ƒƒƒƒƒƒƒƒ¥¥¥¥¥¥¥¥¥¥¥ƒƒƒƒƒƒ\n");
+my_putstr("                     ¶¶¶¶¶¶###ƒƒƒƒƒƒƒƒƒ¥¥¥#####¥ƒƒƒƒƒƒƒ\n");
+my_putstr("                   ¶¶¶ƒƒ¶¶¶¶#ƒƒƒƒƒƒƒƒƒƒ¥¥####¥¥ƒƒƒƒƒƒƒƒ\n");
+my_putstr("                  ¶¶ƒƒ¶ƒƒƒƒ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒ¥¥¥¥ƒƒƒƒƒƒƒƒƒƒ\n");
+}
+
+void	pikachu_second_part()
+{
+my_putstr("                 ¶¶ƒƒƒƒƒƒ§§§§¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                   ¶¶ƒƒ§§§§§§¶¶¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                     ¶¶§§§§§§§¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                       ¶¶§§§§§§ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                         ¶¶¶§ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                          ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                          ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                         ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                         ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                   ¶¶¶¶¶¶¶¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                  ¶¶ƒƒ¶¶ƒƒƒ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ\n");
+my_putstr("                  ¶¶ƒƒƒ¶¶ƒƒƒ¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ§\n");
+my_putstr("                   ¶¶§§§§§§§§¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ§§§§\n");
+my_putstr("                    ¶¶§§§§§§§§¶¶ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ§§§§§§§\n");
+my_putstr("                     ¶¶§§§§§§§§¶¶§§§§ƒƒƒƒƒƒƒ§§§§§§§§§§§\n");
+my_putstr("                      ¶¶§§§§§§§¶¶§§§§§§§§§§§§§§§§§§§§§§\n");
+my_putstr("                        ¶¶¶¶¶¶¶§§§§§§§§§§§§§§§§§§§§§§§§\n");
+my_putstr("                               ¶¶¶¶¶¶¶¶¶¶§§§§§§§§§§§§§§\n");
+my_putstr("                                         ¶¶¶¶¶¶§§§§§§§§\n");
+my_putstr("                                             ¶¶¶¶§§§§¶¶");
+
+}  

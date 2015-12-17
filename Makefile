@@ -15,7 +15,8 @@ SRC =	capture.c \
 	main.c \
 	readline.c \
 	start.c \
-	screen.c 
+	screen.c \
+	pikachu.c
 
 
 OBJ = $(SRC:%.c=%.o)

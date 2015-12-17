@@ -43,5 +43,7 @@ int		mode();
 int		start(char *name);
 void		my_oob();
 int		my_get_option();
+void	pikachu_first_part();
+void	pikachu_second_part();
 
 #endif /* FUNCTIONS_H_ */
